@@ -1,13 +1,14 @@
 package com.apps.ucu.task2;
 
 
-import lombok.SneakyThrows;
+import java.util.Arrays;
+import java.util.List;
+
 import com.apps.ucu.task2.strategies.BirthdaySender;
 import com.apps.ucu.task2.strategies.GiftSender;
 import com.apps.ucu.task2.strategies.MailSender;
 
-import java.util.Arrays;
-import java.util.List;
+import lombok.SneakyThrows;
 
 public class MailFactory {
     private static List<Class<? extends MailSender>> mails = Arrays.asList(BirthdaySender.class, GiftSender.class);
